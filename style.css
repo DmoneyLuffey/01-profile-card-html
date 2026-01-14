@@ -203,3 +203,55 @@ p::after {
   position: relative;
   overflow: visible;
 }
+
+/* 
+  Avatar image:
+  - Centers the avatar image and gives it a subtle border and glow.
+  - Fixed width with auto height to maintain aspect ratio.
+  - Border radius and border color match the futuristic theme.
+*/
+.avatar {
+  display: block;
+  margin: 0 auto 16px;
+  width: 96px;      /* reduced size for better fit */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px; /* slightly sharper corners */
+  border: 2px solid rgba(127,219,255,0.14);
+  box-shadow: 0 6px 18px rgba(127,219,255,0.06);
+}
+
+/* 
+  List styles inside the card:
+  - Removes default list styling (bullets, padding).
+  - Adds spacing between list items.
+*/
+.card ul {
+  list-style: none;     /* remove bullets */
+  padding-left: 0;      /* remove default indent */
+  margin: 8px 0 0;      /* small space above the list */
+}
+
+.card li {
+  margin: 8px 0;        /* spacing between items */
+}
+
+/* 
+  Link styling inside the card:
+  - Matches the header accent color.
+  - Adds padding and border-radius for button-like appearance.
+  - Underline and shadow effects on hover/focus for interactivity.
+*/
+.card a {
+  color: #7FDBFF;               /* match header accent */
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.card a:hover,
+.card a:focus {
+  text-decoration: underline;
+  box-shadow: 0 8px 20px rgba(127,219,255,0.08);
+}

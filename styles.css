@@ -1,0 +1,24 @@
+/* Basic profile photo sizing */
+.profile-photo {
+	width: 150px;       /* displayed size */
+	height: 150px;
+	max-width: 100%;     /* scale down on narrow containers */
+	object-fit: cover;   /* crop to fill box without distortion */
+	border-radius: 50%;  /* circular avatar */
+	display: block;
+
+
+
+
+
+
+
+
+
+}	}		height: 120px;		width: 120px;	.profile-photo {@media (max-width: 420px) {/* Slightly smaller on very small screens */}	margin: 0 auto 1rem;
+}
+
+/* Center profile card content when photo is present */
+.profile-card {
+	text-align: center;
+}
